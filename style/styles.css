@@ -1,0 +1,58 @@
+/* navbar */
+.navbar.navbar-expand-lg.navbar-light.bg-light {
+    z-index: 2;
+}
+
+.navbar-brand {
+    margin-left: 2rem;
+    background:#6672dd;
+    padding: 1rem; 
+    padding-top: 8px; 
+    padding-bottom: 8px;
+    border-radius: 1rem;
+    color:white !important;
+}
+.nav-item.active {
+    color:grey;
+
+}
+.nav-item:hover {
+    background:white;
+    border-radius: 4px;
+    transition: .3s;
+    color:white !important;
+
+}
+.nav-item.dropdown {
+    position: fixed;
+    margin-left: 56rem;
+}
+.container-fluid {
+    background:rgb(216, 216, 213);
+
+
+}
+.nav-link {
+    color:#6672dd !important;
+}
+
+
+/* sidebar */
+
+.sidenav {
+  width: 260px;
+  position: fixed;
+  z-index: 1;
+  background: #eee;
+  overflow-x: hidden;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #2196F3;
+  display: block;
+}
+
+
