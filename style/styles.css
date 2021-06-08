@@ -1,3 +1,11 @@
+
+body {
+    background: linear-gradient(45deg, red, #6672dd);
+    background-repeat: no-repeat;
+    background-size: 90rem 100rem;
+}
+
+
 /* navbar */
 .navbar.navbar-expand-lg.navbar-light.bg-light {
     z-index: 2;
@@ -17,7 +25,7 @@
 
 }
 .nav-item:hover {
-    background:white;
+    background:whitesmoke;
     border-radius: 4px;
     transition: .3s;
     color:white !important;
@@ -28,9 +36,8 @@
     margin-left: 56rem;
 }
 .container-fluid {
-    background:rgb(216, 216, 213);
-
-
+    background:white;
+    opacity: 0.8;
 }
 .nav-link {
     color:#6672dd !important;
@@ -40,19 +47,51 @@
 /* sidebar */
 
 .sidenav {
-  width: 260px;
-  position: fixed;
-  z-index: 1;
-  background: #eee;
-  overflow-x: hidden;
+    width: 300px;
+    margin: 4rem 1rem 4rem 58rem;
+    position: sticky;  
+    border-radius: 1.5rem;
+    z-index: 1;
+    background: white;
+    overflow-x: hidden;
+
 }
 
 .sidenav a {
-  padding: 6px 8px 6px 16px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #2196F3;
-  display: block;
+    margin: 1rem 1rem 1rem 1rem;
+    text-decoration: none;
+    font-size: 20px;
+    color: white ;
+    display: block;
+}
+.container-fluid:hover .container-fluid{
+    opacity: 0.8;
 }
 
+.container-fluid {
+  position: relative;
+  text-align: center;
+}
 
+.container-fluid .img_desc {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: .9;
+    visibility: hidden;
+}
+
+.container-fluid:hover .img_desc {
+    visibility: visible;
+}
+
+.Landing .container {
+    background: white;
+    border-radius: 1rem;
+    position: absolute;
+    margin-left: 10rem;
+    width: 45rem;
+    position: absolute;
+    transform: translate(0%, -150%);
+}
