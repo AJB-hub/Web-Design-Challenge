@@ -91,8 +91,74 @@ body {
     visibility: visible;
 }
 
-.Landing .container {
+.Landing .paper {
     background: white;
+    margin-top: 30.2rem;
+    height: 30rem;
+}
+.Landing .container {
+    background: rgb(255, 255, 255, .8);
+    border-radius: .5rem;
+    margin-left: 10rem;
+    width: auto;
+    float: top;
+    transform: translate(0%, -150%);
+    clear: both;
+}
+.plot__desc {
+    background: rgb(255, 255, 255, .7);
+    border-radius: .5rem;
+    margin-left: 30rem;
+    width: 40rem;
+    float:top;
+    transform: translate(0%, -250%);
+    clear:both;
+}
+
+
+/* Visualization graphs */
+.graph {
+    width: 40rem;
+    margin: 4rem;
+    margin-left: 30rem;
+    padding: .5rem;
+    background:white;
+    border-radius: .5rem;
+}
+
+
+
+/* media resizing */
+
+@media screen and (max-width: 1366px) {
+    .sidenav {
+    visibility: visible;
+}
+
+.Landing .paper {
+    height: 45rem;
+}
+ .Landing .container {
+    border-radius: .5rem;
+    margin: 4rem;
+    width: 45rem;
+    float: left;
+    transform: translate(0%, 0%);
+    overflow-y: hidden;
+}
+
+.graph {
+    width: 40rem;
+    margin: 4rem;
+    margin-left: 10rem;
+    padding: .5rem;
+    background:white;
+    border-radius: .5rem;
+}
+
+
+.Landing .container {
+    background: rgb(255, 255, 255, .8);
     border-radius: .5rem;
     margin-left: 10rem;
     width: auto;
@@ -100,21 +166,17 @@ body {
     transform: translate(0%, -200%);
     clear: both;
 }
-
-
-@media screen and (max-width: 1366px) {
-    .sidenav {
-    visibility: visible;
-}
- .Landing .container {
-    background: white;
+.plot__desc {
+    background: rgb(255, 255, 255, .7);
     border-radius: .5rem;
-    margin: 4rem;
-    width: 45rem;
-    float: left;
-    transform: translate(0%, -200%);
-    overflow-y: hidden;
+    margin-left: 10rem;
+    width: 40rem;
+    float:top;
+    transform: translate(0%, -250%);
+    clear:both;
 }
+
+
 
 }
 
