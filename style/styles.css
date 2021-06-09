@@ -102,7 +102,7 @@ body {
     margin-left: 10rem;
     width: auto;
     float: top;
-    transform: translate(0%, -150%);
+    transform: translate(0%, -300%);
     clear: both;
 }
 .plot__desc {
@@ -128,6 +128,28 @@ body {
 
 
 
+/* comparison graphs */
+
+.row .column {
+    width: 35rem;
+    background: white;
+    margin: 1rem;
+    margin-left: 15rem;
+    border-radius: .5rem;
+}
+
+.paper__grid {
+    background: white;
+    height: 10rem;
+    margin-top: 1rem;
+}
+
+.table.table-bordered.table-hover.table-condensed {
+    width: 2rem;
+    background: white;
+    margin-left: 20rem;
+}
+
 /* media resizing */
 
 @media screen and (max-width: 1366px) {
@@ -138,7 +160,8 @@ body {
 .Landing .paper {
     height: 45rem;
 }
- .Landing .container {
+
+.Landing .container {
     border-radius: .5rem;
     margin: 4rem;
     width: 45rem;
@@ -166,16 +189,24 @@ body {
     transform: translate(0%, -200%);
     clear: both;
 }
+
 .plot__desc {
     background: rgb(255, 255, 255, .7);
     border-radius: .5rem;
     margin-left: 10rem;
     width: 40rem;
     float:top;
-    transform: translate(0%, -250%);
+    transform: translate(0%, -300%);
     clear:both;
 }
 
+.row .column {
+    width: 35rem;
+    background: white;
+    margin: 1rem;
+    margin-left: 3rem;
+    border-radius: .5rem;
+}
 
 
 }
