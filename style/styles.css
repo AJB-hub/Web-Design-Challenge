@@ -1,8 +1,9 @@
 
 body {
-    background: linear-gradient(45deg, red, #6672dd);
-    background-repeat: no-repeat;
-    background-size: 90rem 100rem;
+    background: linear-gradient(45deg, #6672dd, red);
+    background-repeat: repeat;
+    background-position: 20%;
+    background-size: auto;
 }
 
 
@@ -13,7 +14,7 @@ body {
 
 .navbar-brand {
     margin-left: 2rem;
-    background:#6672dd;
+    background: linear-gradient(45deg, #6672dd, red);
     padding: 1rem; 
     padding-top: 8px; 
     padding-bottom: 8px;
@@ -32,8 +33,8 @@ body {
 
 }
 .nav-item.dropdown {
-    position: fixed;
-    margin-left: 56rem;
+    position: absolute;
+    right: 1rem;
 }
 .container-fluid {
     background:white;
@@ -47,14 +48,14 @@ body {
 /* sidebar */
 
 .sidenav {
-    width: 300px;
-    margin: 4rem 1rem 4rem 58rem;
-    position: sticky;  
-    border-radius: 1.5rem;
+    width: 300px;  
+    border-radius: .5rem;
     z-index: 1;
     background: white;
     overflow-x: hidden;
-
+    margin:50px ;
+    float:right;
+    top:-40px;
 }
 
 .sidenav a {
@@ -64,16 +65,14 @@ body {
     color: white ;
     display: block;
 }
-.container-fluid:hover .container-fluid{
-    opacity: 0.8;
-}
 
-.container-fluid {
+
+.card {
   position: relative;
   text-align: center;
 }
 
-.container-fluid .img_desc {
+.card .img_desc {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -82,16 +81,50 @@ body {
     visibility: hidden;
 }
 
-.container-fluid:hover .img_desc {
+.card:hover .img_desc {
     visibility: visible;
 }
 
 .Landing .container {
     background: white;
+    border-radius: .5rem;
+    float: left;
+    margin-left: 20rem;
+    width: 55rem;
+    float: top;
+    transform: translate(0%, -200%);
+    clear: both;
+}
+
+
+@media screen and (max-width: 992px) {
+    .sidenav {
+    visibility: hidden;
+}
+ .Landing .container {
+    background: white;
+    border-radius: .5rem;
+    margin: 4rem;
+    width: 22rem;
+    float: left;
+    transform: translate(0%, -90%);
+    overflow-y: hidden;
+}
+
+}
+
+@media screen and (max-width: 600px) {
+  .sidenav {
+    visibility: hidden;
+}
+ .Landing .container {
+    background: white;
     border-radius: 1rem;
-    position: absolute;
-    margin-left: 10rem;
-    width: 45rem;
-    position: absolute;
-    transform: translate(0%, -150%);
+    margin-left: 4rem;
+    width: 22rem;
+    float: left;
+    transform: translate(0%, -90%);
+    overflow-y: hidden;
+}
+
 }
